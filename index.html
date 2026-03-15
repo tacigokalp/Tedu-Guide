@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEDU Map — AI Campus Navigation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        TEDU<span class="logo-accent">Map</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#backlog">Backlog</a></li>
+      </ul>
+      <a href="#reports" class="nav-cta">View Reports</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-content" data-aos>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          CMPE 491 / 492 · TED University · 2025–2026
+        </div>
+
+        <h1 class="hero-title">
+          Navigate campus<br />
+          with <span class="gradient-text">AI intelligence</span>
+        </h1>
+
+        <p class="hero-desc">
+          Ask <em>"Where is Ulaş Hoca's office?"</em> — TEDU Map understands you,
+          finds your location via WiFi, and guides you there in seconds.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-glow">Explore Project</a>
+          <a href="#reports" class="btn btn-ghost">
+            <span>View Reports</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Team Members</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">AI</span>
+            <span class="stat-label">Powered Core</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">WiFi</span>
+            <span class="stat-label">Indoor Positioning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos>
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="phone-topbar">
+              <span class="phone-time">TEDU Map</span>
+              <span class="phone-signal">●●●</span>
+            </div>
+            <div class="phone-map">
+              <div class="map-grid"></div>
+              <div class="map-node n1"></div>
+              <div class="map-node n2"></div>
+              <div class="map-node n3 active"></div>
+              <div class="map-path"></div>
+              <div class="user-dot">
+                <div class="user-ring"></div>
+              </div>
+            </div>
+            <div class="phone-chat">
+              <div class="msg msg-out">Where is the library? 📍</div>
+              <div class="msg msg-in">
+                <span class="msg-icon">🤖</span>
+                Building C, 2nd floor · 3 min walk
+              </div>
+              <div class="msg msg-out">Thanks!</div>
+            </div>
+            <div class="phone-input">
+              <span>Ask anything...</span>
+              <div class="input-mic">🎤</div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <div class="section-tag">About</div>
+        <h2>What is TEDU Map?</h2>
+        <p>An intelligent campus companion that combines indoor positioning, AI agents, and natural language to make navigation effortless.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text" data-aos>
+          <p>
+            TEDU Map is an <strong>AI-powered intelligent campus navigation system</strong>
+            designed to assist students and staff in navigating within TED University.
+          </p>
+          <p>
+            The system integrates <strong>indoor positioning techniques using WiFi routers</strong>
+            to determine the user's real-time location inside campus buildings.
+            By leveraging <strong>natural language processing (NLP)</strong>, users can interact
+            through conversational queries.
+          </p>
+          <p>
+            The AI agent identifies user intent, retrieves relevant location or information
+            from the campus database, and generates <strong>optimal navigation routes</strong>
+            from the current position to the destination.
+          </p>
+        </div>
+
+        <div class="feature-cards" data-aos>
+          <div class="fcard">
+            <div class="fcard-icon">🗺️</div>
+            <div>
+              <h4>Indoor Navigation</h4>
+              <p>WiFi-based real-time positioning inside buildings</p>
+            </div>
+          </div>
+          <div class="fcard">
+            <div class="fcard-icon">🤖</div>
+            <div>
+              <h4>AI Agent</h4>
+              <p>Intent detection and optimal route generation</p>
+            </div>
+          </div>
+          <div class="fcard">
+            <div class="fcard-icon">💬</div>
+            <div>
+              <h4>Natural Language</h4>
+              <p>Ask questions in plain language, get instant answers</p>
+            </div>
+          </div>
+          <div class="fcard">
+            <div class="fcard-icon">🏫</div>
+            <div>
+              <h4>Campus Info</h4>
+              <p>Office hours, schedules, and facility details</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section section-dark" id="features">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <div class="section-tag">Features</div>
+        <h2>How it works</h2>
+        <p>From a natural language query to step-by-step navigation — all in seconds.</p>
+      </div>
+
+      <div class="steps" data-aos>
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>You ask a question</h3>
+            <p>Type or speak naturally: <em>"Where is Ulaş Hoca's office?"</em> or <em>"How do I get to the swimming pool?"</em> — no special syntax needed.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>AI identifies intent</h3>
+            <p>The NLP engine parses your query, extracts the destination or information request, and queries the campus knowledge base.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Route generated</h3>
+            <p>Your current WiFi position is triangulated, and the optimal path — considering floors, elevators, and accessibility — is computed instantly.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>You arrive</h3>
+            <p>Step-by-step directions guide you to your destination, with contextual info like opening hours displayed along the way.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="query-examples" data-aos>
+        <div class="query-label">Example queries the system handles:</div>
+        <div class="queries">
+          <div class="query">"Where is Ulaş Hoca's office?"</div>
+          <div class="query">"How can I go to the swimming pool?"</div>
+          <div class="query">"Until what time is the library open?"</div>
+          <div class="query">"Where is the nearest cafeteria?"</div>
+          <div class="query">"Is there a printer available near me?"</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <div class="section-tag">Team</div>
+        <h2>Meet the team</h2>
+        <p>Computer Engineering students at TED University building the future of campus navigation.</p>
+      </div>
+
+      <div class="team-grid" data-aos>
+        <div class="team-card">
+          <div class="team-avatar">TFG</div>
+          <h3>Taci Furkan Gökalp</h3>
+          <p>TEDU Computer Engineering</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">ENÖ</div>
+          <h3>Elif Nazlı Özer</h3>
+          <p>TEDU Computer Engineering</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">FNM</div>
+          <h3>Fatima Nasir Muhammad</h3>
+          <p>TEDU Computer Engineering</p>
+        </div>
+      </div>
+
+      <div class="advisors" data-aos>
+        <div class="advisor-card">
+          <div class="advisor-role">Advisor</div>
+          <div class="advisor-name">Tolga Kurtuluş Çapın</div>
+        </div>
+        <div class="advisor-card">
+          <div class="advisor-role">Jury Member</div>
+          <div class="advisor-name">Mehmet Evren Çoşkun</div>
+        </div>
+        <div class="advisor-card">
+          <div class="advisor-role">Jury Member</div>
+          <div class="advisor-name">Müslüm Bozyiğit</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPORTS -->
+  <section class="section section-dark" id="reports">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <div class="section-tag">Reports</div>
+        <h2>Project Deliverables</h2>
+        <p>All CMPE 491 / 492 reports are published here as they are submitted.</p>
+      </div>
+
+      <div class="reports-grid" data-aos>
+        <div class="report-card rc-pending">
+          <div class="rc-header">
+            <span class="rc-code">D1</span>
+            <span class="rc-badge pending">Pending</span>
+          </div>
+          <h4>Project Proposal</h4>
+          <p>Project overview, team members, initial literature review.</p>
+          <div class="rc-date">Due: 20 Mar 2026</div>
+        </div>
+        <div class="report-card rc-pending">
+          <div class="rc-header">
+            <span class="rc-code">D2</span>
+            <span class="rc-badge pending">Pending</span>
+          </div>
+          <h4>Specification Report</h4>
+          <p>Requirements, constraints, professional and ethical issues.</p>
+          <div class="rc-date">Due: 27 Mar 2026</div>
+        </div>
+        <div class="report-card rc-pending">
+          <div class="rc-header">
+            <span class="rc-code">D3</span>
+            <span class="rc-badge pending">Pending</span>
+          </div>
+          <h4>Backlog v1</h4>
+          <p>First version of the project TODO / Backlog document.</p>
+          <div class="rc-date">Due: 27 Mar 2026</div>
+        </div>
+        <div class="report-card">
+          <div class="rc-header">
+            <span class="rc-code">D4</span>
+            <span class="rc-badge upcoming">Upcoming</span>
+          </div>
+          <h4>Analysis Report</h4>
+          <p>Functional & non-functional requirements, use cases, system models.</p>
+          <div class="rc-date">Due: 10 Apr 2026</div>
+        </div>
+        <div class="report-card">
+          <div class="rc-header">
+            <span class="rc-code">D5</span>
+            <span class="rc-badge upcoming">Upcoming</span>
+          </div>
+          <h4>Backlog v2</h4>
+          <p>Updated project backlog and TODO document.</p>
+          <div class="rc-date">Due: 10 Apr 2026</div>
+        </div>
+        <div class="report-card">
+          <div class="rc-header">
+            <span class="rc-code">D6</span>
+            <span class="rc-badge upcoming">Upcoming</span>
+          </div>
+          <h4>High-Level Design</h4>
+          <p>Architecture, subsystems, data management, access control.</p>
+          <div class="rc-date">Due: 15 May 2026</div>
+        </div>
+        <div class="report-card">
+          <div class="rc-header">
+            <span class="rc-code">D7</span>
+            <span class="rc-badge upcoming">Upcoming</span>
+          </div>
+          <h4>Backlog v3</h4>
+          <p>Final version of the project backlog document.</p>
+          <div class="rc-date">Due: 15 May 2026</div>
+        </div>
+        <div class="report-card">
+          <div class="rc-header">
+            <span class="rc-code">D8</span>
+            <span class="rc-badge upcoming">Upcoming</span>
+          </div>
+          <h4>Final Presentation</h4>
+          <p>25-minute oral presentation, poster, and live product demo.</p>
+          <div class="rc-date">Due: TBA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACKLOG -->
+  <section class="section" id="backlog">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <div class="section-tag">Backlog</div>
+        <h2>TODO / Backlog Documents</h2>
+        <p>Each version is published here as the project progresses through the semester.</p>
+      </div>
+
+      <div class="backlog-timeline" data-aos>
+        <div class="bl-item bl-pending">
+          <div class="bl-dot"></div>
+          <div class="bl-card">
+            <div class="bl-top">
+              <span class="bl-version">Version 1</span>
+              <span class="rc-badge pending">Pending</span>
+            </div>
+            <p>Initial backlog with project tasks, priorities, and sprint planning.</p>
+            <div class="bl-date">Due: 27 Mar 2026</div>
+          </div>
+        </div>
+        <div class="bl-item">
+          <div class="bl-dot"></div>
+          <div class="bl-card">
+            <div class="bl-top">
+              <span class="bl-version">Version 2</span>
+              <span class="rc-badge upcoming">Upcoming</span>
+            </div>
+            <p>Updated backlog reflecting mid-semester progress and revised priorities.</p>
+            <div class="bl-date">Due: 10 Apr 2026</div>
+          </div>
+        </div>
+        <div class="bl-item">
+          <div class="bl-dot"></div>
+          <div class="bl-card">
+            <div class="bl-top">
+              <span class="bl-version">Version 3</span>
+              <span class="rc-badge upcoming">Upcoming</span>
+            </div>
+            <p>Final backlog with completed tasks, remaining work, and retrospective notes.</p>
+            <div class="bl-date">Due: 15 May 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">TEDU<span>Map</span></div>
+      <p>CMPE 491 / 492 Senior Design Project · TED University · 2025–2026</p>
+      <p>Coordinator: Prof. Dr. Gökçe Nur Yılmaz</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
